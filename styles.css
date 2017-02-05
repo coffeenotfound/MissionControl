@@ -1,0 +1,25 @@
+html {
+	overflow: visible;
+	min-width: 100%;
+	min-height: 100%;
+	
+	background: black;
+}
+
+.game-canvas {
+	display: absolute;
+	opacity: 0;
+	
+	transition: opacity 0.5s cubic-bezier(0.075, 0.820, 0.165, 1.000);
+}
+.game-canvas[game-initialized] {
+	opacity: 1;
+}
+
+.loading-indicator {
+	font-family: monospace;
+	font-size: 2rem;
+	color: white;
+	
+	margin: auto;
+}
